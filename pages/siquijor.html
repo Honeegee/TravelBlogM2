@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <meta name="description" content="Wander & Explore is a travel blog that inspires wanderlust and helps fellow travelers discover hidden gems worldwide.">
+    <meta name="keywords" content="travel, adventure, culture, sustainability, culinary experiences, exploration, travel tips, hidden gems, responsible tourism, photography, travel guides, outdoor adventures, wanderlust, travel stories">
+    <meta name="robots" content="index, follow">
+    <title>Wander & Explore! - Discover Siquijor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <div class="falling-leaves">
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+    </div>
+    <!-- Header -->
+    <header id="header"></header>
+
+    <main>
+       <!-- Full Width Introduction Section -->
+<section id="introduction" class="container mb-4 mt-5">
+    <h1 class="text-center">Discovering Siquijor: The Enchanting Island of Fire</h1>
+    <p class="lead text-center">Uncover the charm of Siquijor, a mystical island known for its enchanting beauty and serene landscapes.</p>
+
+   <!-- Carousel -->
+<div id="siquijorCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#siquijorCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#siquijorCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#siquijorCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    
+    <!-- Carousel Items -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../images/Siquijor/siquijor-hero.jpg" class="d-block w-100 rounded" alt="Siquijor Hero Image">
+            <div class="carousel-caption d-none d-md-block">
+                
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../images/Siquijor/gallery7.jpg" class="d-block w-100 rounded" alt="Siquijor Beach">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pristine Beaches</h5>
+                <p>Experience the crystal-clear waters</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../images/Siquijor//Falls.jpg" class="d-block w-100 rounded" alt="Siquijor Waterfall">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Natural Wonders</h5>
+                <p>Explore magical waterfalls and landscapes</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#siquijorCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#siquijorCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+            
+            <p>Siquijor is famous for:</p>
+            <ul>
+                <li><strong>Enchanting Waterfalls:</strong> Siquijor is home to stunning waterfalls such as Cambugahay Falls. This three-tiered cascade offers a serene escape with its clear, cool waters and lush, tropical surroundings. The falls are perfect for swimming, relaxing, and taking in the natural beauty.</li>
+                <li><strong>Beautiful Beaches:</strong> The island boasts several beautiful beaches, with Salagdoong Beach being a highlight. Its powdery white sand and turquoise waters create an ideal setting for sunbathing, swimming, and enjoying breathtaking ocean views. Other notable beaches include Paliton Beach, known for its picturesque sunsets, and Larena Beach, offering a quieter retreat.</li>
+                <li><strong>Rich Folklore and Mystical Traditions:</strong> Siquijor is steeped in mysticism and rich folklore. The island is famous for its traditional healers and magical practices, with locals often performing rituals and remedies believed to have spiritual and healing powers. The annual "Healing Festival" is a testament to the island's deep-rooted mystical heritage.</li>
+            </ul>
+        </section>
+
+        <!-- Like and Share Buttons Section -->
+        <section id="like-share-section" class="text-center mb-4">
+            <button class="btn btn-outline-primary me-2">
+                <i class="fa-solid fa-thumbs-up"></i> Like <span class="like-counter" id="like-counter">0</span>
+            </button>
+            <button class="btn btn-outline-secondary">
+                <i class="fa-solid fa-share-nodes"></i> Share
+            </button>
+        </section>
+
+        <!-- Main Content Container -->
+        <div class="container">
+            <div class="row">
+                <!-- Main Content Area -->
+                <div class="col-lg-8">
+                    <!-- About Siquijor -->
+                    <div id="about" class="card mb-4">
+                        <img src="../images/Siquijor/Siquijor.jpg" class="img-fluid" alt="Siquijor Main Image">
+                        <div class="card-body">
+                            <h2 class="card-title">About Siquijor</h2>
+                            <p class="card-text">Siquijor, often referred to as the "Island of Fire," is a captivating destination in the Philippines. Nestled in the heart of the Visayas, Siquijor is a small island known for its enchanting waterfalls, pristine beaches, and rich folklore. Surrounded by the vibrant blue waters of the Visayan Sea, this island invites travelers to explore its lush landscapes, experience its mystical traditions, and bask in its natural beauty.
+
+                              <br><br>The name "Island of Fire" has historical significance, originating from the sight of flickering lights seen by early Spanish explorers who thought the island was enchanted. Today, it still holds a sense of mystery and allure, drawing visitors eager to uncover its secrets. Siquijor's charm lies not only in its stunning scenery but also in its rich cultural heritage. The island is steeped in local traditions, where ancient healing practices intertwine with everyday life, creating a unique atmosphere that beckons travelers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Top Attractions -->
+                    <div id="attractions" class="card mb-4">
+                        <img src="../images/Siquijor/gallery6.jpg" class="img-fluid" alt="Top Attractions">
+                        <div class="card-body">
+                            <h2 class="card-title">Top Attractions</h2>
+                            <ul>
+                                <li><strong>Salagdoong Beach</strong> - Renowned for its powdery white sand and crystal-clear waters, Salagdoong Beach is a must-visit for beach lovers. This beach is famous for its cliff diving spots, where thrill-seekers can take exhilarating leaps into the turquoise waters below. The beach is framed by rugged cliffs and lush vegetation, creating a stunning backdrop for sunbathing and swimming. Visitors can unwind on the soft sand or explore the vibrant marine life by snorkeling in the nearby coral reefs. Salagdoong Beach also features charming beachside huts, perfect for enjoying a meal or refreshing drink while soaking in the breathtaking ocean views.</li>
+                                <li><strong>Enchanted Balete Tree</strong> - This centuries-old tree, located in the town of Lazi, is a fascinating site steeped in local folklore. The Balete Tree is believed to possess mystical properties, and many locals view it as a sacred site. Visitors can sit beneath its sprawling branches and enjoy the tranquility of the area. Nearby, a natural spring provides a unique opportunity for foot spa treatments, where tiny fish nibble on your feet, creating a relaxing experience. The Enchanted Balete Tree serves as a reminder of Siquijor's rich cultural heritage and the deep-rooted beliefs that continue to thrive on the island.</li>
+                                <li><strong>Cambugahay Falls</strong> -This series of stunning waterfalls is one of Siquijor’s most popular destinations. The falls cascade into several natural pools, surrounded by lush greenery that enhances the serene atmosphere. Visitors can swim in the cool, clear waters, which provide a refreshing escape from the tropical heat. The three-tiered structure allows for different spots to explore, with each level offering unique views and swimming opportunities. Adventurous visitors can also take a leap from nearby cliffs into the inviting pools below. Cambugahay Falls is not only a great place to relax and enjoy nature but also a perfect spot for photography enthusiasts looking to capture its enchanting beauty.</li>
+                                <li><strong>Paliton</strong> -This hidden gem is often regarded as one of the most beautiful beaches on the island. With its serene atmosphere and picturesque sunsets, Paliton Beach is a perfect retreat for those seeking tranquility. The beach features soft white sand and clear waters, ideal for swimming and sunbathing. As the sun sets, the sky transforms into a canvas of vibrant colors, making it an enchanting spot for evening strolls or romantic moments. For those looking to escape the crowds, Paliton Beach offers a peaceful environment to unwind and enjoy the natural beauty of Siquijor.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Practical Travel Information -->
+                    <div id="travel-info" class="card mb-4">
+                        <img src="../images/Siquijor/gallery5.jpg" class="img-fluid" alt="Practical Travel Information">
+                        <div class="card-body">
+                            <h2 class="card-title">Practical Travel Information</h2>
+                            <p class="card-text"><strong>Getting There:</strong> Traveling to Siquijor is relatively easy, with various transportation options available. Ferries operate regularly from major cities such as Cebu and Dumaguete, making the journey enjoyable with scenic views of the surrounding sea. The ferry ride typically takes about an hour, providing a pleasant start to your Siquijor adventure. For those who prefer flying, Siquijor has a small airport with domestic flights from Cebu and Manila. Upon arrival, visitors can easily rent scooters or take local transportation to explore the island's attractions.</p>
+                            <p class="card-text"><strong>Best Time to Visit:</strong> The best time to visit Siquijor is during the dry season, which spans from December to May. During these months, the weather is characterized by sunny days and minimal rainfall, making it ideal for outdoor activities such as beach hopping, hiking, and exploring the waterfalls. The dry season also coincides with various local festivals, allowing visitors to immerse themselves in the island's vibrant culture. If you prefer a quieter experience, consider visiting during the shoulder months of November or early June when the crowds are fewer, and the weather remains pleasant.</p>
+                            <p class="card-text"><strong>Local Cuisine:</strong> Siquijor’s culinary offerings are a delightful reflection of its cultural heritage. To truly experience the island's flavors, be sure to try traditional dishes such as "adobong puti", a unique variation of the classic Filipino adobo made with pork and vinegar, resulting in a savory yet slightly tangy flavor. Another local favorite is "torta," a delicious cake made from eggs, sugar, and flour, often enjoyed as a snack or dessert. Visitors can find these dishes in local eateries and markets, where they can also sample fresh seafood and tropical fruits. Exploring Siquijor's cuisine is an essential part of experiencing the island's rich culture.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+<div class="col-lg-4">
+    <!-- Map Section -->
+    <div class="map-container mb-4" id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827864.7177104992!2d123.02508281786389!3d9.204026126668594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b2a24fc3f9e9b1%3A0x35f3dff10c256b65!2sSiquijor%2C%20Philippines!5e0!3m2!1sen!2sph!4v1695182393776!5m2!1sen!2sph"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Travel Tips Section -->
+    <section class="travel-tips mb-4">
+        <h2 class="section-title">Essential Travel Tips</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="accordion" id="travelTipsAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accommodationTips">
+                                Where to Stay
+                            </button>
+                        </h3>
+                        <div id="accommodationTips" class="accordion-collapse collapse show" data-bs-parent="#travelTipsAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-hotel me-2"></i><strong>Luxury:</strong> Coco Grove Beach Resort</li>
+                                    <li><i class="fas fa-home me-2"></i><strong>Mid-range:</strong> Islandia Beach Resort</li>
+                                    <li><i class="fas fa-bed me-2"></i><strong>Budget:</strong> JJ's Backpackers Village</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#transportationTips">
+                                Getting Around
+                            </button>
+                        </h3>
+                        <div id="transportationTips" class="accordion-collapse collapse" data-bs-parent="#travelTipsAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-motorcycle me-2"></i>Rent a motorbike (₱300-500 per day)</li>
+                                    <li><i class="fas fa-car me-2"></i>Hire a tricycle (₱1000-1500 for island tour)</li>
+                                    <li><i class="fas fa-car-side me-2"></i>Book a van (₱2500-3000 for groups)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Itinerary Section -->
+    <section class="itinerary-suggestion mb-4">
+        <h2 class="section-title">Suggested Itineraries</h2>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h3 class="card-title">3-Day Adventure</h3>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <h4 class="timeline-title">Day 1: Beach Hopping</h4>
+                        <p>Salagdoong Beach → Paliton Beach → Sunset at Tubod Beach</p>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="timeline-title">Day 2: Cultural Immersion</h4>
+                        <p>Visit healers → Lazi Church → Enchanted Balete Tree</p>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="timeline-title">Day 3: Nature Exploration</h4>
+                        <p>Cambugahay Falls → Lugnason Falls → Island farewell</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Weather Section -->
+    <section class="weather-activities mb-4">
+        <h2 class="section-title">Weather & Best Activities</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Season</th>
+                                <th>Weather</th>
+                                <th>Activities</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dry (Nov-May)</td>
+                                <td>Sunny, minimal rain</td>
+                                <td>Beach hopping, waterfalls</td>
+                            </tr>
+                            <tr>
+                                <td>Wet (Jun-Oct)</td>
+                                <td>Occasional rain</td>
+                                <td>Cultural visits, spa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery mb-4">
+        <h2 class="section-title">Gallery</h2>
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/Siquijor/Siquijor.jpg" class="d-block w-100 rounded" alt="Gallery Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Siquijor/gallery2.jpg" class="d-block w-100 rounded" alt="Gallery Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Siquijor/gallery3.jpg" class="d-block w-100 rounded" alt="Gallery Image 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments mb-4">
+        <h2 class="section-title">Comments</h2>
+        <div class="card">
+            <div class="card-body">
+                <div id="comments-list">
+                    <!-- Comments will be dynamically added here -->
+                </div>
+                <form id="comment-form" class="mt-3">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comment" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Comment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Blogs Section placeholder -->
+    <div id="latest-blogs-section"></div>
+</div>
+
+        <!-- Related Articles Section -->
+        <div id="related-articles-section" class="container mt-5"></div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+ <!-- Scripts -->
+ <script src="../js/script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+ </body>
+ </html>

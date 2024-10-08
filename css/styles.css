@@ -1,0 +1,422 @@
+:root {
+    --primary-color: #1E1E1F; 
+    --secondary-color: #9A7C50;
+    --background-color: #eafde0;
+    --text-color: #221F1F; 
+    --header-bg: #000107; 
+    --header-text: #F5EAD8; 
+    
+    --hover-color: #C9A772; 
+    --card-bg: #FFFFFF; 
+}
+
+
+
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+    margin: 0;
+}
+
+/* Animated leaves falling effect */
+.falling-leaves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.leaf {
+    position: absolute;
+    width: 10vw; 
+    height: 10vw; 
+    background: url('../images/leaf.png') no-repeat center;
+    background-size: cover;
+    animation: falling 20s infinite linear;
+}
+
+@keyframes falling {
+    0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+    100% { transform: translate3d(100px, 1000px, 0) rotate(360deg); }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.section-title {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Header and Navigation */
+.custom-header {
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.navbar-brand {
+    color: var(--secondary-color);
+    font-size: 3.5rem; 
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--hover-color);
+}
+
+.navbar-nav {
+    margin-left: 1.5rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--secondary-color);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.search-bar {
+    max-width: 250px;
+}
+
+/* Responsive adjustments for the header */
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    .navbar-nav {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .search-bar {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 70vh; 
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#hero h1 {
+    font-size: 3.5rem; 
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Featured Posts Section */
+#recent-posts .card {
+    flex-direction: row;
+}
+
+#recent-posts .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Aside Styling */
+aside .card {
+    margin-bottom: 20px;
+}
+
+aside .rounded-circle {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Video Container */
+.video-container {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 auto 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    display: flex;             
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;     
+    padding: 2rem; 
+    width: 100%; 
+}
+
+footer h3, footer h4 {
+    color: var(--secondary-color);
+    margin: 0; 
+}
+
+footer a {
+    color: var(--header-text);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--hover-color);
+}
+
+.social-icons .list-inline-item {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 2rem; 
+    }
+
+    #hero h1 {
+        font-size: 2.5rem; 
+    }
+
+    .hero-content {
+        padding: 20px; 
+    }
+
+    #recent-posts .card {
+        flex-direction: column;
+    }
+
+    #recent-posts .card-img-top {
+        height: 200px;
+    }
+}
+
+/* About Us */
+
+.author-img {
+    width: 250px; 
+    height: 250px; 
+    border: 3px solid var(--secondary-color);
+    object-fit: cover; /* Ensures the image fits inside the circle without distortion */
+    display: block; /* Ensures the image behaves like a block element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+   
+}
+
+
+
+
+/* Author Card Text Colors */
+.author-card {
+    background-color: var(--card-bg); 
+}
+
+.author-card .card-title {
+    color: var(--primary-color); 
+}
+
+.author-card .card-subtitle {
+    color: var(--secondary-color); 
+}
+
+.author-card .card-text {
+    color: var(--text-color); 
+}
+
+/* Hover Effects for Author Cards */
+.author-card:hover .card-title,
+.author-card:hover .card-subtitle,
+.author-card:hover .card-text {
+    color: var(--hover-color); 
+}
+
+
+* Custom styles for the carousel */
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+}
+
+.carousel-item img {
+    height: 400px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Ensure indicators are visible */
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+
+
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline-item {
+    padding-bottom: 1rem;
+    border-left: 2px solid #dee2e6;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 1rem;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: #007bff;
+    border-radius: 50%;
+}
+
+.timeline-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wander & Explore!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Contact Wander & Explore for travel inquiries, collaborations, or to share your travel stories.">
+    <meta name="keywords" content="contact, travel inquiries, collaborations, travel stories, Wander & Explore, travel blog, Honey Grace Denolan">
+</head>
+<body>
+
+    <div class="falling-leaves">
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+    </div>
+
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Main Contact Form Section -->
+            <div class="col-lg-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h1 class="section-title">Contact Us</h1>
+                        <p class="lead">Feel free to reach out through the following channels:</p>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-envelope me-2"></i> <a href="mailto:honey@example.com">honey@example.com</a></li>
+                            <li><i class="fas fa-phone me-2"></i> +63 123 456 7890</li>
+                        </ul>
+
+                        <h2 class="mb-3 card-title">Get in Touch</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest Blogs Section -->
+            <div id="latest-blogs-section" class="col-lg-4"></div>
+        </div>
+    </div>
+
+    <!-- Related Articles Section -->
+    <div id="related-articles-section" class="container mt-5"></div>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+  
+
+<!-- Scripts -->
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

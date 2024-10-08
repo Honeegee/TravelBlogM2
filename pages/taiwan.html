@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <meta name="description" content="Wander & Explore is a travel blog that inspires wanderlust and helps fellow travelers discover hidden gems worldwide.">
+    <meta name="keywords" content="Taiwan, travel, night markets, temples, Taipei 101, bubble tea, hiking, culture, food tourism, Asian travel">
+    <meta name="robots" content="index, follow">
+    <title>Wander & Explore! - Discover Taiwan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <div class="falling-leaves">
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+    </div>
+    <!-- Header -->
+    <header id="header"></header>
+
+    <main>
+        <!-- Full Width Introduction Section -->
+        <section id="introduction" class="container mb-4 mt-5">
+            <h1 class="text-center">Exploring Taiwan: The Heart of Asia</h1>
+            <p class="lead text-center">Discover the perfect blend of tradition and modernity in Taiwan, where ancient temples meet soaring skyscrapers and street food rivals fine dining.</p>
+
+            <!-- Carousel -->
+            <div id="taiwanCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#taiwanCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#taiwanCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#taiwanCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/Taiwan/taipei101.jpg" class="d-block w-100 rounded" alt="Taipei 101 at night">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Modern Marvel</h5>
+                            <p>Taipei 101 - An icon of modern Taiwan</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Taiwan/temples.jpg" class="d-block w-100 rounded" alt="Traditional Temple">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cultural Heritage</h5>
+                            <p>Ancient temples preserve Taiwan's rich history</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Taiwan/nightmarket.jpg" class="d-block w-100 rounded" alt="Night Market">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Culinary Paradise</h5>
+                            <p>Vibrant night markets offer endless food adventures</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#taiwanCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#taiwanCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <p>Taiwan is famous for:</p>
+            <ul>
+                <li><strong>Vibrant Night Markets:</strong> Experience the heart of Taiwanese culture at bustling night markets like Shilin and Raohe, where the aroma of stinky tofu mingles with the sizzle of oyster omelets and the sweet scent of bubble tea.</li>
+                <li><strong>Stunning Natural Landscapes:</strong> From the marble cliffs of Taroko Gorge to the serene Sun Moon Lake, Taiwan's diverse geography offers countless opportunities for outdoor adventures and breathtaking photo opportunities.</li>
+                <li><strong>Modern Meets Traditional:</strong> Witness the harmonious blend of ancient temples and ultra-modern architecture, exemplified by the towering Taipei 101 standing alongside centuries-old shrines and traditional night markets.</li>
+            </ul>
+        </section>
+
+        <!-- Like and Share Buttons Section -->
+        <section id="like-share-section" class="text-center mb-4">
+            <button class="btn btn-outline-primary me-2">
+                <i class="fa-solid fa-thumbs-up"></i> Like <span class="like-counter" id="like-counter">0</span>
+            </button>
+            <button class="btn btn-outline-secondary">
+                <i class="fa-solid fa-share-nodes"></i> Share
+            </button>
+        </section>
+
+        <!-- Main Content Container -->
+        <div class="container">
+            <div class="row">
+                <!-- Main Content Area -->
+                <div class="col-lg-8">
+                    <!-- About Taiwan -->
+                    <div id="about" class="card mb-4">
+                        <img src="../images/Taiwan/t17.jpg" class="img-fluid" alt="Taiwan Cityscape">
+                        <div class="card-body">
+                            <h2 class="card-title">About Taiwan</h2>
+                            <p class="card-text">Taiwan, a small island with a big heart, offers visitors an incredible mix of experiences. From the bustling streets of Taipei to the tranquil mountains of Alishan, Taiwan seamlessly blends modernity with tradition. The island's compact size makes it possible to go from busy city streets to serene mountain temples in just a few hours.
+
+                            <br><br>Known for its warm hospitality, Taiwan welcomes visitors with open arms and a cup of world-famous bubble tea. The island's history as a cultural crossroads has resulted in a unique identity that combines Chinese, Japanese, and indigenous influences, creating a distinctive and vibrant culture that's all its own.</p>
+                        </div>
+                    </div>
+
+                   <!-- Top Attractions -->
+<div id="attractions" class="card mb-4">
+    <img src="../images/Taiwan/t2.jpg" class="img-fluid" alt="Taroko Gorge">
+    <div class="card-body">
+        <h2 class="card-title">Top Attractions</h2>
+        <ul>
+            <li><strong>Taipei 101</strong> - Once the world's tallest building, this iconic skyscraper offers breathtaking views of the city from its observation deck on the 89th floor. The architectural marvel represents Taiwan's progress and modernity, while also incorporating traditional design elements. Don't miss the giant wind damper sphere, a 730-ton ball that keeps the building stable in strong winds and earthquakes.</li>
+
+            <li><strong>Taroko Gorge</strong> - A natural wonder carved by the Liwu River, featuring marble cliffs, winding trails, and spectacular views. Visitors can hike through various trails, visit temples perched on cliffs, and witness the power of nature in this magnificent national park. The Swallow Grotto trail and the Eternal Spring Shrine are must-see spots within the gorge.</li>
+
+            <li><strong>Shilin Night Market</strong> - One of Taipei's largest and most famous night markets, offering a feast for all senses. Sample local delicacies like oyster omelets, stinky tofu, and bubble tea while browsing through shops selling clothes, accessories, and souvenirs. The market comes alive at night with vibrant lights, enthusiastic vendors, and the buzz of hungry visitors.</li>
+
+            <li><strong>Sun Moon Lake</strong> - Taiwan's largest body of water, surrounded by mountains and home to the Thao aboriginal tribe. Visitors can take boat rides, cycle around the lake, or ride the cable car for panoramic views. The area is also known for its tea plantations and the beautiful Wenwu Temple, which offers stunning views of the lake.</li>
+
+            <li><strong>Chiang Kai-shek Memorial Hall</strong> - A grand monument built in memory of the former President of the Republic of China, Chiang Kai-shek. The hall features a majestic white marble structure with blue-tiled roofs and is surrounded by Liberty Square. The hall’s grounds host performances, ceremonies, and are home to two guard-changing ceremonies every day. The museum inside showcases the life and achievements of Chiang Kai-shek.</li>
+
+            <li><strong>Jiufen Old Street</strong> - A historic mountain town that offers a glimpse of Taiwan's gold mining past. With its narrow streets lined with tea houses, street food vendors, and craft shops, Jiufen feels like a walk back in time. It is said to have inspired the setting for the famous animated film "Spirited Away." Enjoy scenic views of the coastline while sampling local treats like taro balls and sweet potato desserts.</li>
+
+            <li><strong>Alishan National Scenic Area</strong> - Known for its stunning sunrises, ancient cypress forests, and the Alishan Forest Railway, this mountainous region is a favorite among nature lovers. Visitors can hike through the lush forest trails, ride the old railway, or catch a glimpse of the famous sea of clouds from Alishan’s peaks. Cherry blossoms in spring and fireflies in summer add to the magic of this location.</li>
+
+            <li><strong>Kenting National Park</strong> - Located on the southern tip of Taiwan, Kenting is famous for its tropical beaches, coral reefs, and vibrant nightlife. It's a popular destination for water sports like snorkeling, scuba diving, and surfing. The area also features scenic spots such as the Eluanbi Lighthouse and Longpan Park, offering panoramic views of the Pacific Ocean. Every spring, Kenting hosts a lively music festival, drawing crowds from all over the island.</li>
+
+            <li><strong>Beitou Hot Springs</strong> - Nestled in the hills on the outskirts of Taipei, Beitou is renowned for its therapeutic hot springs. Visitors can soak in natural geothermal waters at public baths or private resorts. The area also has a Hot Spring Museum, the beautiful Beitou Library, and lush greenery, making it a perfect spot for a relaxing day trip from the city.</li>
+
+            <li><strong>Fo Guang Shan Buddha Museum</strong> - Located in Kaohsiung, this massive complex is a center for Buddhist education and culture. The museum houses one of the world's largest Buddha statues, standing at 108 meters tall. Visitors can explore the many halls and pavilions, which feature ancient relics, cultural exhibitions, and peaceful gardens for meditation. The museum is a serene place for reflection and learning about Taiwan’s spiritual heritage.</li>
+        </ul>
+    </div>
+</div>
+
+
+                    <!-- Practical Travel Information -->
+                    <div id="travel-info" class="card mb-4">
+                        <img src="../images/Taiwan/t4.jpg" class="img-fluid" alt="Taiwan Transportation">
+                        <div class="card-body">
+                            <h2 class="card-title">Practical Travel Information</h2>
+                            <p class="card-text"><strong>Getting There:</strong> Taiwan's main gateway is Taoyuan International Airport, serving flights from major cities worldwide. The efficient airport MRT connects directly to Taipei Main Station. Within Taiwan, a comprehensive transportation network includes high-speed rail, regular trains, and local buses, making it easy to explore the island.</p>
+                            <p class="card-text"><strong>Best Time to Visit:</strong> October to April offers pleasant weather with less rainfall. Summer (June to August) can be hot and humid with occasional typhoons. Spring brings cherry blossoms, while autumn showcases beautiful foliage. Consider visiting during cultural festivals like the Lantern Festival or Dragon Boat Festival for unique experiences.</p>
+                            <p class="card-text"><strong>Local Cuisine:</strong> Taiwan is a food lover's paradise, famous for its street food and night markets. Must-try dishes include beef noodle soup, xiaolongbao (soup dumplings), gua bao (Taiwanese hamburger), and bubble tea. Don't miss the breakfast culture with fan tuan (rice rolls) and dan bing (egg crepes). Vegetarians will find plenty of options, including delicious Buddhist vegetarian cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Map Section -->
+                    <div class="map-container mb-4" id="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672202.9233141697!2d119.27807836582416!3d23.6001542792507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2sTaiwan!5e0!3m2!1sen!2sus!4v1695858663095!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <!-- Travel Tips Section -->
+                    <section class="travel-tips mb-4">
+                        <h2 class="section-title">Essential Travel Tips</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="accordion" id="travelTipsAccordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accommodationTips">
+                                                Where to Stay
+                                            </button>
+                                        </h3>
+                                        <div id="accommodationTips" class="accordion-collapse collapse show" data-bs-parent="#travelTipsAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="fas fa-hotel me-2"></i><strong>Luxury:</strong> Mandarin Oriental Taipei</li>
+                                                    <li><i class="fas fa-home me-2"></i><strong>Mid-range:</strong> Citizenm Taipei North Gate</li>
+                                                    <li><i class="fas fa-bed me-2"></i><strong>Budget:</strong> Star Hostel Taipei Main Station</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#transportationTips">
+                                                Getting Around
+                                            </button>
+                                        </h3>
+                                        <div id="transportationTips" class="accordion-collapse collapse" data-bs-parent="#travelTipsAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="fas fa-subway me-2"></i>MRT (subway) - Get an EasyCard</li>
+                                                    <li><i class="fas fa-train me-2"></i>High-speed rail between cities</li>
+                                                    <li><i class="fas fa-bus me-2"></i>Local buses for reaching attractions</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="itinerary-suggestion mb-4">
+                        <h2 class="section-title">Suggested Itineraries</h2>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">5-Day Taipei Adventure</h3>
+                                <ul class="timeline">
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Day 1: City Exploration</h4>
+                                        <p>Taipei 101 → Elephant Mountain hike → Shilin Night Market</p>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Day 2: Cultural Immersion</h4>
+                                        <p>National Palace Museum → Longshan Temple → Ximending</p>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Day 3: Nature Escape</h4>
+                                        <p>Yangmingshan National Park → Beitou Hot Springs</p>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Day 4: Day Trip</h4>
+                                        <p>Jiufen Old Street → Shifen Waterfall → Sky Lanterns</p>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Day 5: Modern Taipei</h4>
+                                        <p>Taipei Fine Arts Museum → Huashan 1914 Creative Park → Raohe Night Market</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="weather-activities mb-4">
+                        <h2 class="section-title">Weather & Best Activities</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Season</th>
+                                                <th>Weather</th>
+                                                <th>Activities</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Spring (Mar-May)</td>
+                                                <td>Mild, occasional rain</td>
+                                                <td>Cherry blossom viewing, hiking</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Summer (Jun-Aug)</td>
+                                                <td>Hot, humid, typhoon season</td>
+                                                <td>Night markets, indoor attractions</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Autumn (Sep-Nov)</td>
+                                                <td>Cool, comfortable</td>
+                                                <td>Outdoor festivals, mountain trips</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Winter (Dec-Feb)</td>
+                                                <td>Mild, occasional cold snaps</td>
+                                                <td>Hot springs, year-end celebrations</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="gallery mb-4">
+                        <h2 class="section-title">Gallery</h2>
+                        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../images/Taiwan/t15.jpg" class="d-block w-100 rounded" alt="Taipei 101">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/Taiwan/t9.jpg" class="d-block w-100 rounded" alt="Jiufen Old Street">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/Taiwan/t20.jpg" class="d-block w-100 rounded" alt="Taroko National Park">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </section>
+                    
+                    <section class="comments mb-4">
+                        <h2 class="section-title">Comments</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="comments-list">
+                                    <!-- Comments will be dynamically added here -->
+                                </div>
+                                <form id="comment-form" class="mt-3">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="comment" class="form-label">Comment</label>
+                                        <textarea class="form-control" id="comment" rows="3" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit Comment</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+   <!-- Latest Blogs Section placeholder -->
+   <div id="latest-blogs-section"></div>
+</div>
+
+        <!-- Related Articles Section -->
+        <div id="related-articles-section" class="container mt-5"></div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
