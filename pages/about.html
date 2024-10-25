@@ -19,8 +19,31 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
   <!-- Header -->
-  <header id="header"></header>
+  <header class="custom-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="javascript:void(0);" onclick="navigateToHome()">Wander & Explore!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <form class="d-flex search-bar" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
     
     <main class="container-fluid px-0">
         <section id="hero" class="mb-5 position-relative">
@@ -70,37 +93,45 @@
         <h2 class="text-center mb-5 playfair-heading section-title">Meet Our Authors</h2>
         <div class="row g-4">
             <div class="col-12">
-                <div class="card author-card text-center h-100">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="../images/Authors/Honey.jpg" alt="Honey Grace Denolan" class="author-img mx-auto mt-3 rounded-circle">
+                <div class="card author-card h-100">
+                    <div class="row g-0 align-items-center">
+                        <!-- Author Image Column -->
+                        <div class="col-md-3 text-center">
+                            <div class="author-img-container p-3">
+                                <img src="../images/Authors/Honey.jpg" alt="Honey Grace Denolan" class="author-img rounded-circle img-fluid">
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
+                        <!-- Author Text Column -->
+                        <div class="col-md-9 d-flex align-items-center">
+                            <div class="card-body text-center">
                                 <h4 class="card-title">Honey Grace Denolan</h4>
                                 <p class="card-subtitle mb-2">Adventure Enthusiast</p>
                                 <p class="card-text">
-                                    Hello! I’m Honey. My journey has taken me from a background in Chemistry to a passion for IT. Along the way, I’ve embraced opportunities that allow me to explore new places and cultures. My fluency in Mandarin Chinese has been especially rewarding, as it has enabled me to travel as a translator and experience rich cultural exchanges. 
-                                
+                                    Hello! I’m Honey. My journey has taken me from a background in Chemistry to a passion for IT. Along the way, I’ve embraced opportunities that allow me to explore new places and cultures. My fluency in Mandarin Chinese has been especially rewarding, as it has enabled me to travel as a translator and experience rich cultural exchanges.
+                                 
                                     Recently, I took up freediving, which has allowed me to discover the peaceful beauty of the underwater world. This experience has deepened my connection with nature and the importance of balance in life.
-                                
+                                 
                                     I believe in the unique connection between technology and travel, and I hope to inspire others to explore both in their own adventures.
                                 </p>
-                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+       
 
             <div class="col-12">
-                <div class="card author-card text-center h-100">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://via.placeholder.com/150" alt="Alex Culturist" class="author-img mx-auto mt-3 rounded-circle">
+                <div class="card author-card h-100">
+                    <div class="row g-0 align-items-center">
+                        <!-- Author Image Column -->
+                        <div class="col-md-3 text-center">
+                            <div class="author-img-container p-3">
+                                <img src="../images/Authors/Honey.jpg" alt="Honey Grace Denolan" class="author-img rounded-circle img-fluid">
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
+                        <!-- Author Text Column -->
+                        <div class="col-md-9 d-flex align-items-center">
+                            <div class="card-body text-center">
                                 <h4 class="card-title">Alex Culturist</h4>
                                 <p class="card-subtitle mb-2">Culture & History Buff</p>
                                 <p class="card-text">Alex's deep dive into local customs and historical contexts provides rich, insightful perspectives on every destination.</p>
@@ -111,13 +142,17 @@
             </div>
 
             <div class="col-12">
-                <div class="card author-card text-center h-100">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://via.placeholder.com/150" alt="Sam Foodie" class="author-img mx-auto mt-3 rounded-circle">
+                <div class="card author-card h-100">
+                    <div class="row g-0 align-items-center">
+                        <!-- Author Image Column -->
+                        <div class="col-md-3 text-center">
+                            <div class="author-img-container p-3">
+                                <img src="../images/Authors/Honey.jpg" alt="Honey Grace Denolan" class="author-img rounded-circle img-fluid">
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
+                        <!-- Author Text Column -->
+                        <div class="col-md-9 d-flex align-items-center">
+                            <div class="card-body text-center">
                                 <h4 class="card-title">Sam Foodie</h4>
                                 <p class="card-subtitle mb-2">Culinary Explorer</p>
                                 <p class="card-text">Sam's culinary adventures and local food recommendations add a delicious flavor to our travel guides.</p>
@@ -128,13 +163,17 @@
             </div>
 
             <div class="col-12">
-                <div class="card author-card text-center h-100">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://via.placeholder.com/150" alt="Jordan Eco" class="author-img mx-auto mt-3 rounded-circle">
+                <div class="card author-card h-100">
+                    <div class="row g-0 align-items-center">
+                        <!-- Author Image Column -->
+                        <div class="col-md-3 text-center">
+                            <div class="author-img-container p-3">
+                                <img src="../images/Authors/Honey.jpg" alt="Honey Grace Denolan" class="author-img rounded-circle img-fluid">
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
+                        <!-- Author Text Column -->
+                        <div class="col-md-9 d-flex align-items-center">
+                            <div class="card-body text-center">
                                 <h4 class="card-title">Jordan Eco</h4>
                                 <p class="card-subtitle mb-2">Sustainable Travel Advocate</p>
                                 <p class="card-text">Jordan's expertise in eco-friendly travel helps our readers make responsible choices and minimize their environmental impact.</p>
@@ -154,11 +193,7 @@
     <!-- Falling Leaves Animation -->
     <div class="falling-leaves">
         <div class="leaf"></div>
-        <div class="leaf"></div>
-        <div class="leaf"></div>
-        <div class="leaf"></div>
-        <div class="leaf"></div>
-        <div class="leaf"></div>
+
     </div>
 
     <!-- Include Footer -->
@@ -166,6 +201,7 @@
     
 <!-- Scripts -->
 <script src="../js/script.js"></script>
+<script src="../js/searchpages.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 

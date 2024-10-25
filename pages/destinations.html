@@ -22,23 +22,41 @@
 
     <div class="falling-leaves">
         <div class="leaf"></div>
-        <div class="leaf"></div>
-        <div class="leaf"></div>
-        <div class="leaf"></div>
-        <div class="leaf"></div>
-        <div class="leaf"></div>
+     
     </div>
     <!-- Header -->
-    <header id="header"></header>
+    <header class="custom-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="javascript:void(0);" onclick="navigateToHome()">Wander & Explore!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                    <form class="d-flex search-bar" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <section class="container mt-5">
-        <h1>Explore Exciting Destinations!</h1>
-        <p class="lead">Browse through the best travel destinations across the globe.</p>
+        <h1 class="mb-5">Explore Exciting Destinations!</h1>
+        
         <div class="row">
       
             <!-- Batanes -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-5 mx-3">
                     <img src="../images/Batanes.jpg" class="card-img-top" alt="Batanes">
                     <div class="card-body">
                         <h5 class="card-title">Batanes</h5>
@@ -50,7 +68,7 @@
 
             <!-- Taiwan -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-5 mx-3">
                     <img src="../images/Taiwan/t13.jpg" class="card-img-top" alt="Taiwan">
                     <div class="card-body">
                         <h5 class="card-title">Taiwan</h5>
@@ -62,7 +80,7 @@
 
             <!-- Thailand -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-5 mx-3">
                     <img src="../images/Thailand.jpg" class="card-img-top" alt="Thailand">
                     <div class="card-body">
                         <h5 class="card-title">Thailand</h5>
@@ -74,7 +92,7 @@
 
             <!-- Doha -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-5 mx-3">
                     <img src="../images/Doha.jpg" class="card-img-top" alt="Doha">
                     <div class="card-body">
                         <h5 class="card-title">Doha</h5>
@@ -86,7 +104,7 @@
 
              <!-- Bacolod -->
              <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-5 mx-3">
                     <img src="../images/Bacolod.jpg" class="card-img-top" alt="Bacolod">
                     <div class="card-body">
                         <h5 class="card-title">Bacolod</h5>
@@ -100,19 +118,19 @@
 
             <!-- Panglao -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-5 mx-3">
                     <img src="../images/Panglao/panglao4.jpeg" class="card-img-top" alt="Panglao">
                     <div class="card-body">
-                        <h5 class="card-title">Panglao</h5>
-                        <p class="card-text">Experience the tropical paradise of Panglao Island with its white-sand beaches and crystal-clear waters.</p>
-                        <a href="panglao.html" class="btn btn-primary">Learn More</a>
+                        <h5 class="card-title">Bohol</h5>
+                        <p class="card-text">Experience the tropical paradise of Bohol with its white-sand beaches and crystal-clear waters.</p>
+                        <a href="bohol.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
 
             <!-- Siquijor -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-5 mx-3">
                     <img src="../images/siquijor/Siquijor.jpg" class="card-img-top" alt="Siquijor">
                     <div class="card-body">
                         <h5 class="card-title">Siquijor</h5>
@@ -124,7 +142,7 @@
 
             <!-- Boracay -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-5 mx-3">
                     <img src="../images/Boracay.jpg" class="card-img-top" alt="Boracay">
                     <div class="card-body">
                         <h5 class="card-title">Boracay</h5>
@@ -136,7 +154,7 @@
 
             <!-- Palawan -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-5 mx-3">
                     <img src="../images/Palawan/palawan3.jpg" class="card-img-top" alt="Palawan">
                     <div class="card-body">
                         <h5 class="card-title">Palawan</h5>
@@ -149,7 +167,7 @@
 
          <!-- Cebu -->
          <div class="col-md-4">
-            <div class="card mb-4">
+            <div class="card mb-5 mx-3">
                 <img src="../images/Cebu/cebu4.jpg" class="card-img-top" alt="Cebu">
                 <div class="card-body">
                     <h5 class="card-title">Cebu</h5>
@@ -166,6 +184,7 @@
     
 <!-- Scripts -->
 <script src="../js/script.js"></script>
+<script src="../js/searchpages.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 

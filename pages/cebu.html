@@ -1,29 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cebu Adventures - Wander & Explore!</title>
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <meta name="description" content="Wander & Explore is a travel blog that showcases Cebu's rich history, stunning beaches, and vibrant culture.">
+    <meta name="keywords" content="Cebu, Philippines, travel, beaches, islands, Kawasan Falls, Moalboal, Magellan's Cross, Filipino culture, island life">
+    <meta name="robots" content="index, follow">
+    <title>Wander & Explore! - Discover Cebu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-      <!-- Header -->
-      <header id="header"></header>
+    <!-- Header -->
+ 
+    <header class="custom-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="javascript:void(0);" onclick="navigateToHome()">Wander & Explore!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                    <form class="d-flex search-bar" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <main class="container mt-5">
-        <h1>Cebu Adventures</h1>
-        <p>Discover the vibrant culture and stunning landscapes of Cebu, Philippines. Explore historic sites, beautiful beaches, and delicious local cuisine. Cebu is known for its rich history, natural wonders, and friendly locals.</p>
+    <main>
+        <!-- Full Width Introduction Section -->
+        <section id="introduction" class="container mb-4 mt-5">
+            <h1 class="text-center">Cebu: The Queen City of the South</h1>
+            <p class="lead text-center">Experience the perfect blend of history, culture, and natural wonders in Cebu, where pristine beaches meet urban sophistication and ancient heritage.</p>
 
-        <!-- Add more content about Cebu here -->
+            <!-- Carousel -->
+            <div id="cebuCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cebuCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#cebuCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#cebuCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/Cebu/kawasan.jpg" class="d-block w-100 rounded" alt="Kawasan Falls">
+                        <div class="carousel-caption d-none d-md-block custom-carousel-caption">
+                            <h5>Natural Wonder</h5>
+                            <p>The stunning Kawasan Falls</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Cebu/inside-magellancross.jpg" class="d-block w-100 rounded" alt="Magellan's Cross">
+                        <div class="carousel-caption d-none d-md-block custom-carousel-caption">
+                            <h5>Historical Landmark</h5>
+                            <p>Magellan's Cross and Basilica</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Cebu/sardines.jpg" class="d-block w-100 rounded" alt="Moalboal Sardine Run">
+                        <div class="carousel-caption d-none d-md-block custom-carousel-caption">
+                            <h5>Marine Paradise</h5>
+                            <p>Moalboal's Famous Sardine Run</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#cebuCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cebuCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <p>Cebu is famous for:</p>
+            <ul>
+                <li><strong>Rich History:</strong> Home to significant historical landmarks including Magellan's Cross and ancient churches that showcase the birthplace of Christianity in the Philippines.</li>
+                <li><strong>Natural Wonders:</strong> Boasting pristine beaches, waterfalls, and world-class diving spots with rich marine biodiversity.</li>
+                <li><strong>Cultural Heritage:</strong> A vibrant mix of traditional and modern Filipino culture, celebrated through festivals, cuisine, and crafts.</li>
+            </ul>
+        </section>
+
+        <!-- Like and Share Buttons Section -->
+        <section id="like-share-section" class="text-center mb-4">
+            <button class="btn btn-outline-primary me-2">
+                <i class="fa-solid fa-thumbs-up"></i> Like <span class="like-counter" id="like-counter">0</span>
+            </button>
+            <button class="btn btn-outline-secondary">
+                <i class="fa-solid fa-share-nodes"></i> Share
+            </button>
+        </section>
+
+        <!-- Main Content Container -->
+        <div class="container">
+            <div class="row">
+                <!-- Main Content Area -->
+                <div class="col-lg-8">
+                    <!-- About Cebu Section -->
+                    <div id="about" class="card mb-4">
+                        <img src="../images/Cebu/cebu.jpg" class="img-fluid fixed-height" alt="Cebu City Skyline">
+                        
+                        <div class="card-body">
+                            <h2 class="card-title">About Cebu</h2>
+                            <p class="card-text">
+                                Cebu, known as the Queen City of the South, is a fascinating blend of urban life, historical richness, and natural beauty. As one of the most developed provinces in the Philippines, it offers a unique experience where modern conveniences meet cultural heritage. The city serves as the country's oldest city and was the first Spanish settlement in the Philippines.
+
+                                <br><br>The province consists of Cebu Island and 167 surrounding islands and islets. The main island is long and narrow, stretching 196 kilometers from north to south, flanked by Bohol to the east, Negros to the west, and Leyte to the northeast. Its strategic location has made it a crucial trading hub since pre-colonial times.
+
+                                <br><br>Cebu City, the capital, is the country's oldest city and second-largest metropolitan area after Manila. It's a major business hub with a vibrant urban culture, yet maintains its historical charm through preserved Spanish colonial structures and ancient churches. The city seamlessly blends its role as a major economic center with its status as a tourist destination.
+
+                                <br><br>The province is blessed with diverse natural attractions, from white-sand beaches and crystal-clear waters perfect for diving and snorkeling, to magnificent waterfalls and mountains for adventure seekers. The waters around Cebu are home to diverse marine life, including whale sharks, sea turtles, and vibrant coral reefs.
+
+                                <br><br>Cebuano culture is rich and dynamic, manifested in its festivals, particularly the grand Sinulog Festival celebrating the Santo Niño. The province is also famous for its delicacies, including lechon (roasted pig), dried mangoes, and seafood specialties, making it a gastronomic destination in its own right.
+                            </p>
+                        </div>
+                    </div>
+
+                   <!-- Top Attractions -->
+                    <div id="attractions" class="card mb-4">
+                        <img src="../images/Cebu/cebu3.jpeg" class="img-fluid fixed-height" alt="Cebu Attractions">
+                        <div class="card-body">
+                            <h2 class="card-title">Top Attractions</h2>
+                            <ul>
+                                <li><strong>Magellan's Cross and Basilica del Santo Niño</strong> - Historical landmarks marking the birthplace of Christianity in the Philippines. These iconic sites are a must-visit for history buffs and those interested in Cebu's religious and cultural heritage.</li>
+
+                                <li><strong>Kawasan Falls</strong> - A three-tiered waterfall system famous for its turquoise waters and canyoneering activities. A perfect spot for adventure seekers, Kawasan Falls offers both serene swimming spots and thrilling adventures.</li>
+
+                                <li><strong>Moalboal</strong> - Known for its sardine run, turtle encounters, and vibrant coral reefs perfect for diving and snorkeling. It is a marine paradise, ideal for divers and nature lovers alike, offering some of the best underwater experiences in the Philippines.</li>
+
+                                <li><strong>Osmena Peak</strong> - The highest point in Cebu, offering spectacular views and hiking opportunities. The rolling hills and jagged peaks of Osmena Peak provide a stunning contrast to Cebu's coastal attractions.</li>
+
+                                <li><strong>Bantayan Island</strong> - Famous for its white sand beaches, clear waters, and laid-back island atmosphere. A hidden gem, Bantayan Island is the ideal destination for those looking to escape the hustle and bustle of city life and relax in paradise.</li>
+
+                                <li><strong>Malapascua Island</strong> - A diving paradise known for thresher shark sightings and beautiful beaches. The island’s pristine waters and rich marine life attract divers from all over the world.</li>
+
+                                <li><strong>Fort San Pedro</strong> - The oldest triangular bastion fort in the Philippines, built during the Spanish colonial period. Fort San Pedro offers a glimpse into the island's colonial past with its well-preserved structure and museum exhibits.</li>
+
+                                <li><strong>Temple of Leah</strong> - Often called the "Taj Mahal of Cebu," a grand testament to undying love built in Roman architectural style. The temple offers both an awe-inspiring structure and panoramic views of Cebu City.</li>
+
+                                <li><strong>Sirao Flower Garden</strong> - Known as the "Little Amsterdam of Cebu" for its colorful flower fields. The picturesque garden is perfect for photography lovers, with rows of bright celosia and other flowers creating a beautiful, vibrant landscape.</li>
+
+                                <li><strong>Carbon Market</strong> - The largest and oldest farmers' market in Cebu, offering local produce and traditional items. A true local experience, Carbon Market provides a taste of Cebu's culture and a chance to buy unique souvenirs and fresh goods.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Practical Travel Information -->
+                    <div id="travel-info" class="card mb-4">
+                        <img src="../images/Cebu/cebu4.jpg" class="img-fluid fixed-height" alt="Cebu Transportation">
+                        
+                        <div class="card-body">
+                            <h2 class="card-title">Practical Travel Information</h2>
+
+                            <p class="card-text"><strong>Getting There:</strong> 
+                                Cebu is easily accessible through the Mactan-Cebu International Airport, the second-largest airport in the Philippines. It serves numerous domestic and international flights daily. The airport is located on Mactan Island, connected to Cebu City by two bridges. From the airport, you can take a taxi, bus, or arrange private transfer to your destination.
+
+                                <br><br>Within Cebu, transportation options include jeepneys (local public transport), taxis, buses, and motorcycle taxis locally known as "habal-habal." For island hopping or reaching nearby islands, regular ferry services are available from various ports.
+                            </p>
+
+                            <p class="card-text"><strong>Best Time to Visit:</strong> 
+                                Cebu enjoys a tropical climate with temperatures ranging from 23°C to 32°C (73°F to 90°F) year-round. The best time to visit is during the dry season from December to May, with January being particularly popular due to the Sinulog Festival.
+
+                                <br><br>The rainy season runs from June to November, with August and September typically being the wettest months. However, rain showers are usually brief, and many activities can still be enjoyed during this period. The shoulder seasons (November and May) often offer good weather with fewer tourists.
+                            </p>
+
+                            <p class="card-text"><strong>Local Cuisine:</strong> 
+                                Cebu's culinary scene is a highlight of any visit. The province is famous for its lechon (roasted pig), which Anthony Bourdain declared "the best pig ever." Other must-try dishes include sutukil (sug (grilled), tula (soup), and kilaw (raw)), puso (hanging rice), and danggit (dried fish).
+
+                                <br><br>Don't miss local delicacies like dried mangoes, chicharon (pork rinds), and otap (crispy puff pastry). The city also offers excellent seafood restaurants, particularly in Mactan, and modern dining establishments serving both local and international cuisine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Map Section -->
+                    <div class="map-container mb-4" id="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502756.71549873696!2d123.54721615665348!3d10.315699959691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258dcd2dfd%3A0x4c34030cdbd33507!2sCebu!5e0!3m2!1sen!2sph!4v1695858663095!5m2!1sen!2sph"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <!-- Travel Tips Section -->
+                    <section class="travel-tips mb-4">
+                        <h2 class="section-title">Essential Travel Tips</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="accordion" id="travelTipsAccordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accommodationTips">
+                                                Where to Stay
+                                            </button>
+                                        </h3>
+                                        <div id="accommodationTips" class="accordion-collapse collapse show" data-bs-parent="#travelTipsAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="fas fa-hotel me-2"></i><strong>Luxury:</strong> Shangri-La Mactan, Crimson Resort</li>
+                                                    <li><i class="fas fa-home me-2"></i><strong>Mid-range:</strong> Quest Hotel, Bayfront Hotel</li>
+                                                    <li><i class="fas fa-bed me-2"></i><strong>Budget:</strong> Cebu Guest House, MJ Hotel</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#transportationTips">
+                                                Getting Around
+                                            </button>
+                                        </h3>
+                                        <div id="transportationTips" class="accordion-collapse collapse" data-bs-parent="#travelTipsAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="fas fa-car me-2"></i>Taxis and Grab</li>
+                                                    <li><i class="fas fa-bus me-2"></i>Jeepneys and buses</li>
+                                                    <li><i class="fas fa-motorcycle me-2"></i>Habal-habal (motorcycle taxis)</li>
+                                                <li><i class="fas fa-ship me-2"></i>Ferries for island hopping</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="itinerary-suggestion mb-4">
+                        <h2 class="section-title">Suggested Itineraries</h2>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">5-Day Cebu Adventure</h3>
+                                <ul class="timeline">
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Days 1-2: Cebu City</h4>
+                                        <p>Historical Tour → Tops Lookout → Temple of Leah → Sirao Garden</p>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Day 3: South Cebu</h4>
+                                        <p>Kawasan Falls → Canyoneering → Moalboal Sardine Run</p>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Days 4-5: Island Life</h4>
+                                        <p>Bantayan or Malapascua Island → Beach activities → Island hopping</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="weather-activities mb-4">
+                        <h2 class="section-title">Weather & Best Activities</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Season</th>
+                                                <th>Weather</th>
+                                                <th>Activities</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dry (Dec-Feb)</td>
+                                                <td>Cool, minimal rain</td>
+                                                <td>Sinulog Festival, sightseeing</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Summer (Mar-May)</td>
+                                                <td>Hot and humid</td>
+                                                <td>Beach activities, waterfalls</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rainy (Jun-Aug)</td>
+                                                <td>Frequent rain</td>
+                                                <td>Museum visits, shopping</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fall (Sep-Nov)</td>
+                                                <td>Moderate rain</td>
+                                                <td>Cultural tours, food trips</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="gallery mb-4">
+                        <h2 class="section-title">Gallery</h2>
+                        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../images/Cebu/cebu5.jpg" class="d-block w-100 rounded" alt="Sinulog Festival">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/Cebu/cebu.jpg" class="d-block w-100 rounded" alt="Cebu Heritage">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../images/Cebu/cebu2.jpg" class="d-block w-100 rounded" alt="Beach Life">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </section>
+                    
+                            <!-- Comments Section -->
+                    <section class="comments-section container my-5">
+                        <div class="row">
+                            <div class="col-lg-12 mx-auto">
+                            
+                                <!-- Comments Display -->
+                                <div id="commentsContainer">
+                                    <!-- Comments will be dynamically loaded here -->
+                                </div>
+
+                                <!-- Comment Form -->
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Leave a Comment</h5>
+                                        <form id="commentForm" onsubmit="handleComment(event)">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="commenterName" placeholder="Your Name" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="commentText" rows="3" placeholder="Your Comment" required></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Post Comment</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Latest Blogs Section placeholder -->
+                    <div id="latest-blogs-section"></div>
+                </div>
+            </div>
+
+            <!-- Related Articles Section -->
+            <div id="related-articles-section" class="container mt-5"></div>
+        </div>
     </main>
 
-  <!-- Include Footer -->
-  <div id="footer"></div>
+    <!-- Footer -->
+    <div id="footer"></div>
 
-  <script src="../js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/searchpages.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

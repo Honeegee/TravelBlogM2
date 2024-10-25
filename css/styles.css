@@ -35,12 +35,13 @@ body {
 
 .leaf {
     position: absolute;
-    width: 10vw; 
-    height: 10vw; 
-    background: url('../images/leaf.png') no-repeat center;
+    width: 5vw; 
+    height: 5vw; 
+    background: url('../images/maple-leaf.png') no-repeat center;
     background-size: cover;
     animation: falling 20s infinite linear;
 }
+
 
 @keyframes falling {
     0% { transform: translate3d(0, 0, 0) rotate(0deg); }
@@ -58,6 +59,8 @@ h1, h2, h3, h4, h5, .navbar-brand {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
+
 
 /* Header and Navigation */
 .custom-header {
@@ -111,6 +114,40 @@ h1, h2, h3, h4, h5, .navbar-brand {
     max-width: 250px;
 }
 
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.search-result-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-result-item:hover {
+    background-color: #f8f9fa;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.highlight {
+    background-color: #ffd700;
+    padding: 0 2px;
+}
+
 /* Responsive adjustments for the header */
 @media (max-width: 991px) {
     .navbar-brand {
@@ -132,6 +169,26 @@ h1, h2, h3, h4, h5, .navbar-brand {
         max-width: 100%;
         margin-top: 1rem;
     }
+}
+
+/* Add smooth transition for mobile menu */
+.navbar-collapse {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Fix for mobile menu toggle animation */
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Optional: Add active state styles */
+.navbar-nav .nav-link.active {
+    color: var(--hover-color);
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
 }
 
 /* Hero Section */
@@ -256,6 +313,30 @@ aside .rounded-circle {
     border-radius: 15px;
 }
 
+/* For Recent Posts */
+.card .row .col-md-4 img {
+    min-height: 300px;
+    object-fit: cover;
+}
+
+/* For Featured Posts */
+.card .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .card .row .col-md-4 img {
+        min-height: 200px;
+    }
+    
+    .card .card-img-top {
+        height: 200px;
+    }
+}
+
+
 /* Footer Styling */
 footer {
     background-color: var(--header-bg);
@@ -268,7 +349,7 @@ footer {
     width: 100%; 
 }
 
-footer h3, footer h4 {
+footer h3, footer h4, footer h5 {
     color: var(--secondary-color);
     margin: 0; 
 }
@@ -282,14 +363,24 @@ footer a {
 footer a:hover {
     color: var(--hover-color);
 }
-
-.social-icons .list-inline-item {
-    margin-right: 10px;
+.social-icon {
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover; 
+    transition: transform 0.2s; 
 }
 
-.social-icons a {
-    font-size: 2rem;
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
+
+
+
+
+.small-font {
+    font-size: 0.8rem; 
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -320,10 +411,10 @@ footer a:hover {
     width: 250px; 
     height: 250px; 
     border: 3px solid var(--secondary-color);
-    object-fit: cover; /* Ensures the image fits inside the circle without distortion */
-    display: block; /* Ensures the image behaves like a block element */
-    margin-left: auto; /* Centers the image horizontally */
-    margin-right: auto; /* Centers the image horizontally */
+    object-fit: cover; 
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
    
 }
 
@@ -364,12 +455,16 @@ footer a:hover {
 }
 
 .carousel-item img {
-    height: 400px; /* Fixed height for all images */
-    object-fit: cover; /* Ensures images cover the area without distortion */
+    height: 400px; 
+    object-fit: cover; 
+}
+
+.carousel h1 {
+    text-shadow:rgba(0, 0, 0, 0.5);
 }
 
 .carousel-caption {
-    background: rgba(0,0,0,0.5);
+
     border-radius: 10px;
     padding: 10px;
 }
@@ -385,6 +480,24 @@ footer a:hover {
     border-radius: 50%;
     margin: 0 4px;
 }
+
+.custom-carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;                       
+    padding: 15px;                       
+    border-radius: 8px;                
+    transition: background-color 0.3s;    
+}
+
+
+/* destination main pictures */
+.fixed-height {
+    height: 600px; 
+    object-fit: cover; 
+    width: 100%; 
+    border-radius: 0.25rem; 
+}
+
 
 
 
@@ -420,3 +533,46 @@ footer a:hover {
 }
 
 
+/* Adjustments for Extra Small Devices */
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1rem; 
+    }
+
+    .btn-primary {
+        font-size: 0.9rem; 
+        padding: 8px 16px; 
+    }
+
+    /* Video Container Adjustments */
+    .video-container {
+        max-width: 100%; 
+    }
+
+    /* Footer Adjustments */
+    footer {
+        flex-direction: column;
+        padding: 1rem; 
+    }
+
+    footer h3, footer h4, footer h5 {
+        font-size: 1rem; 
+    }
+}
+
+
+
+
+.liked {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.comment-like-btn.liked {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.reply-btn:disabled {
+    opacity: 0.5;
+}

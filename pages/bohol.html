@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <meta name="description" content="Wander & Explore is a travel blog that inspires wanderlust and helps fellow travelers discover hidden gems worldwide.">
+    <meta name="keywords" content="Bohol, Philippines, travel, Chocolate Hills, tarsiers, beaches, Filipino culture, heritage sites">
+    <meta name="robots" content="index, follow">
+    <title>Wander & Explore! - Discover Bohol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="custom-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="javascript:void(0);" onclick="navigateToHome()">Wander & Explore!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                    <form class="d-flex search-bar" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Full Width Introduction Section -->
+        <section id="introduction" class="container mb-4 mt-5">
+            <h1 class="text-center">Bohol: Nature's Wonder and Cultural Heritage</h1>
+            <p class="lead text-center">Discover the magical island of Bohol, home to the iconic Chocolate Hills, adorable tarsiers, pristine beaches, and rich historical heritage that tells the story of Filipino culture.</p>
+
+            <!-- Carousel -->
+            <div id="boholCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#boholCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#boholCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#boholCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/Panglao/chocohills.jpg" class="d-block w-100 rounded" alt="Chocolate Hills">
+                        <div class="carousel-caption d-none d-md-block custom-carousel-caption">
+                            <h5>Natural Wonder</h5>
+                            <p>The iconic Chocolate Hills</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Panglao/tarsier.jpg" class="d-block w-100 rounded" alt="Philippine Tarsier">
+                        <div class="carousel-caption d-none d-md-block custom-carousel-caption">
+                            <h5>Unique Wildlife</h5>
+                            <p>The endemic Philippine Tarsier</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Panglao/panglao.jpg" class="d-block w-100 rounded" alt="Panglao Beach">
+                        <div class="carousel-caption d-none d-md-block custom-carousel-caption">
+                            <h5>Paradise Beach</h5>
+                            <p>Pristine beaches of Panglao</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#boholCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#boholCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <p>Bohol is famous for:</p>
+            <ul>
+                <li><strong>Natural Wonders:</strong> Home to the mysterious Chocolate Hills, a geological formation of over 1,000 perfectly cone-shaped hills.</li>
+                <li><strong>Unique Wildlife:</strong> Sanctuary of the Philippine Tarsier, one of the world's smallest primates.</li>
+                <li><strong>Historical Heritage:</strong> Rich in colonial history with centuries-old churches and historical sites.</li>
+            </ul>
+        </section>
+
+        <!-- Like and Share Buttons Section -->
+        <section id="like-share-section" class="text-center mb-4">
+            <button class="btn btn-outline-primary me-2">
+                <i class="fa-solid fa-thumbs-up"></i> Like <span class="like-counter" id="like-counter">0</span>
+            </button>
+            <button class="btn btn-outline-secondary">
+                <i class="fa-solid fa-share-nodes"></i> Share
+            </button>
+        </section>
+
+        <!-- Main Content Container -->
+        <div class="container">
+            <div class="row">
+                <!-- Main Content Area -->
+                <div class="col-lg-8">
+                    <!-- About Bohol Section -->
+                    <div id="about" class="card mb-4">
+                        <img src="../images/Panglao/panglao9.jpg" class="img-fluid fixed-height" alt="Bohol Overview">
+                        
+                        <div class="card-body">
+                            <h2 class="card-title">About Bohol</h2>
+                            <p class="card-text">
+                                Bohol, a heart-shaped island province in the Central Visayas region of the Philippines, is a treasure trove of natural wonders and historical heritage. Known for its unique combination of natural attractions, rich history, and vibrant culture, Bohol has become one of the Philippines' most popular tourist destinations.
+
+                                <br><br>The province consists of Bohol Island and 75 smaller surrounding islands, including the popular tourist destination of Panglao. What makes Bohol truly special is its diverse landscape, from the mysterious Chocolate Hills to its pristine beaches, from dense mahogany forests to historic colonial churches.
+
+                                <br><br>The island's most famous landmark, the Chocolate Hills, consists of at least 1,268 perfectly cone-shaped hills spread across several municipalities. These hills, which turn chocolate-brown during the dry season, have become an iconic symbol of Philippine tourism and are considered a National Geological Monument.
+
+                                <br><br>Bohol is also a crucial sanctuary for the Philippine Tarsier, one of the world's smallest primates. These nocturnal creatures, with their distinctive large eyes, have become ambassadors for wildlife conservation in the Philippines. The Tarsier Sanctuary in Corella provides a protected natural habitat for these endangered species.
+
+                                <br><br>The province has a rich historical heritage, evident in its colonial-era churches, watchtowers, and ancestral houses. The Blood Compact Site commemorates the first treaty of friendship between the Filipinos and Spaniards, marking a significant moment in Philippine history.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Top Attractions -->
+                    <div id="attractions" class="card mb-4">
+                        <img src="../images/Panglao/panglao8.jpg" class="img-fluid fixed-height" alt="Bohol Attractions">
+                        <div class="card-body">
+                            <h2 class="card-title">Top Attractions</h2>
+                            <ul>
+                                <li><strong>Chocolate Hills</strong> - A geological wonder featuring over 1,000 symmetrical hills that turn brown during the dry season. This unique landscape is one of the most iconic natural landmarks in the Philippines, drawing tourists from around the world.</li>
+
+                                <li><strong>Tarsier Sanctuary</strong> - A conservation area where visitors can observe the endangered Philippine Tarsier in its natural habitat. These small primates are known for their large eyes and nocturnal habits, making the sanctuary a must-see for wildlife enthusiasts.</li>
+
+                                <li><strong>Panglao Island</strong> - Famous for its white-sand beaches, diving spots, and vibrant marine life. Panglao is a favorite destination for beach lovers and divers alike, offering beautiful coastal views and an array of underwater adventures.</li>
+
+                                <li><strong>Loboc River</strong> - Known for its scenic river cruises and floating restaurants offering local cuisine. A Loboc River cruise provides a relaxing way to enjoy the lush countryside, with local musicians often serenading passengers along the way.</li>
+
+                                <li><strong>Baclayon Church</strong> - One of the oldest stone churches in Asia, built during the Spanish colonial period. The church stands as a testament to Bohol’s rich religious and colonial history, showcasing centuries-old architecture and artifacts.</li>
+
+                                <li><strong>Man-made Forest</strong> - A two-kilometer stretch of densely planted mahogany trees creating a unique forest tunnel. This green canopy is a photographer's dream and provides a cool, refreshing stopover for travelers en route to the Chocolate Hills.</li>
+
+                                <li><strong>Hinagdanan Cave</strong> - A naturally lit cave with a crystal-clear underground pool. The stalactites and stalagmites within Hinagdanan Cave, combined with the sunlight filtering in, create an ethereal beauty that attracts both local and foreign tourists.</li>
+
+                                <li><strong>Blood Compact Site</strong> - A historical landmark commemorating the first treaty of friendship between Filipinos and Spaniards. This symbolic site marks a significant event in Philippine history and is a popular cultural attraction in Bohol.</li>
+
+                                <li><strong>Balicasag Island</strong> - A marine sanctuary known for excellent snorkeling and diving opportunities. The rich biodiversity around Balicasag Island makes it a prime spot for observing coral reefs and marine life, including sea turtles and colorful fish.</li>
+
+                                <li><strong>Beaches</strong> - Alona Beach, Dumaluan Beach, and Doljo Beach offer various water activities and relaxation spots. These beaches are perfect for sunbathing, swimming, and experiencing the laid-back island vibe of Panglao.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Practical Travel Information -->
+                    <div id="travel-info" class="card mb-4">
+                        <img src="../images/Panglao/panglaofood.jpg" class="img-fluid fixed-height" alt="Bohol Transportation">
+                        
+                        <div class="card-body">
+                            <h2 class="card-title">Practical Travel Information</h2>
+
+                            <p class="card-text"><strong>Getting There:</strong> 
+                                Bohol is accessible by air and sea. The new Bohol-Panglao International Airport serves as the main gateway, with regular flights from Manila, Cebu, and other major cities. Multiple airlines including Philippine Airlines, Cebu Pacific, and AirAsia operate daily flights. For those preferring sea travel, several ferry companies operate regular trips from Cebu City to Tagbilaran Port.
+
+                                <br><br>Within Bohol, transportation options include rental cars, motorcycles, tricycles, and organized tours. Many tourists opt for organized day tours that cover the major attractions, while others prefer the flexibility of hired vehicles or motorcycles for independent exploration.
+                            </p>
+
+                            <p class="card-text"><strong>Best Time to Visit:</strong> 
+                                Bohol enjoys a tropical climate with two distinct seasons. The best time to visit is during the dry season from December to May, when weather conditions are ideal for outdoor activities and island hopping. The peak tourist season falls between December and February when the weather is cooler and perfect for sightseeing.
+
+                                <br><br>The rainy season runs from June to November, with occasional typhoons possible. While rainfall can affect outdoor activities, this period offers lower rates and fewer crowds. The Chocolate Hills maintain their appeal year-round, though they are most "chocolate-colored" during the dry season.
+                            </p>
+
+                            <p class="card-text"><strong>Local Cuisine:</strong> 
+                                Bohol's culinary scene offers a delightful mix of Filipino classics and local specialties. Must-try dishes include *Bohol Chicken Binakol* (chicken soup cooked in coconut), *Calamay* (sticky rice delicacy), and fresh seafood from Panglao's restaurants.
+
+                                <br><br>The famous Loboc River Cruise combines sightseeing with dining, offering a buffet of Filipino dishes while floating down the scenic river. Local delicacies like *peanut kisses* (peanut-shaped cookies) and *broa* (local cookie made from coconut) make perfect souvenirs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Map Section -->
+                    <div class="map-container mb-4" id="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503631.6493067076!2d123.75161595422752!3d9.8501788756664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa17de1ba154df%3A0x6bc8bf042118d020!2sBohol!5e0!3m2!1sen!2sph!4v1695858663095!5m2!1sen!2sph"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <!-- Travel Tips Section -->
+                    <section class="travel-tips mb-4">
+                        <h2 class="section-title">Essential Travel Tips</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="accordion" id="travelTipsAccordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accommodationTips">
+                                                Where to Stay
+                                            </button>
+                                        </h3>
+                                        <div id="accommodationTips" class="accordion-collapse collapse show" data-bs-parent="#travelTipsAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="fas fa-hotel me-2"></i><strong>Luxury:</strong> Henann Resort, Amorita Resort</li>
+                                                    <li><i class="fas fa-home me-2"></i><strong>Mid-range:</strong> South Palms Resort</li>
+                                                    <li><i class="fas fa-bed me-2"></i><strong>Budget:</strong> Alona Pawikan Resort</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#transportationTips">
+                                                Getting Around
+                                            </button>
+                                        </h3>
+                                        <div id="transportationTips" class="accordion-collapse collapse" data-bs-parent="#travelTipsAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="fas fa-car me-2"></i>Car rental for countryside tour</li>
+                                                    <li><i class="fas fa-motorcycle me-2"></i>Motorcycle rental for flexibility</li>
+                                                    <li><i class="fas fa-bus me-2"></i>Organized tour packages</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="itinerary-suggestion mb-4">
+                        <h2 class="section-title">Suggested Itineraries</h2>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">3-Day Bohol Adventure</h3>
+                                <ul class="timeline">
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Day 1: Countryside Tour</h4>
+                                        <p>Chocolate Hills → Tarsier Sanctuary → Man-made Forest → Loboc River Cruise</p>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Day 2: Heritage & Culture</h4>
+                                        <p>Baclayon Church → Blood Compact Site → Hinagdanan Cave → Local Market Visit</p>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <h4 class="timeline-title">Day 3: Beach & Marine Life</h4>
+                                        <p>Panglao Beach → Balicasag Island Diving/Snorkeling → Virgin Island</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="weather-activities mb-4">
+                        <h2 class="section-title">Weather & Best Activities</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Season</th>
+                                                <th>Weather</th>
+                                                <th>Activities</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dry (Dec-Feb)</td>
+                                                <td>Cool, minimal rain</td>
+                                                <td>Countryside tours, beach activities</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Summer (Mar-May)</td>
+                                                <td>Hot and humid</td>
+                                                <td>Swimming, island hopping</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rainy (Jun-Aug)</td>
+                                                <td>Frequent rain</td>
+                                                <td>Indoor activities, museum visits</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mild (Sep-Nov)</td>
+                                                <td>Occasional showers</td>
+                                                <td>Mixed activities, less crowded tours</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="gallery mb-4">
+                        <h2 class="section-title">Gallery</h2>
+                        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <video class="d-block w-100 rounded" controls>
+                                        <source src="../images/Panglao/panglao.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <video class="d-block w-100 rounded" controls>
+                                        <source src="../images/Panglao/video_2024-10-24_05-09-34.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="carousel-caption">
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <video class="d-block w-100 rounded" controls>
+                                        <source src="../images/Panglao/video_2024-10-24_05-09-39.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="carousel-caption">
+                                       
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </section>
+                    
+                    <!-- Comments Section -->
+                    <section class="comments-section container my-5">
+                        <div class="row">
+                            <div class="col-lg-12 mx-auto">
+                            
+                                <!-- Comments Display -->
+                                <div id="commentsContainer">
+                                    <!-- Comments will be dynamically loaded here -->
+                                </div>
+
+                                <!-- Comment Form -->
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Leave a Comment</h5>
+                                        <form id="commentForm" onsubmit="handleComment(event)">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="commenterName" placeholder="Your Name" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="commentText" rows="3" placeholder="Your Comment" required></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Post Comment</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Latest Blogs Section placeholder -->
+                    <div id="latest-blogs-section"></div>
+                </div>
+            </div>
+
+            <!-- Related Articles Section -->
+            <div id="related-articles-section" class="container mt-5"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/searchpages.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
